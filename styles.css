@@ -19,17 +19,14 @@ body {
 p {
     margin: 0;
     font-weight: 200;
+    font-family: 'Jost', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.7;
 }
 
 /* Navbar */
 .navbar {
     padding: 2% 15%;
-}
-
-.navbar-brand {
-    max-width: 100px;
-    white-space: normal;
-    line-height: 1.3;
 }
 
 /* Home Landing */
@@ -128,7 +125,7 @@ hr {
 /* About section */
 .about {
     background-color: black;
-    padding: 5% 15%;
+    padding: 10% 15%;
     color: white;
 }
 
@@ -155,6 +152,8 @@ hr {
 
 .about-img {
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .experience {
@@ -258,10 +257,16 @@ footer {
 }
 
 @media only screen and (max-width: 460px) {
+    .navbar-brand {
+        max-width: 100px;
+        white-space: normal;
+        line-height: 1.3;
+    }
+
     .banner {
         padding: 15% 12%;
     }
-    
+
     .banner h1 {
         font-size: 2.5em;
     }
@@ -280,5 +285,12 @@ footer {
 
     .projects h2 {
         font-size: 2em;
+    }
+}
+
+/* Really really large desktop */
+@media only screen and (min-width: 1740px) {
+    .about img {
+        width: 70%;
     }
 }
