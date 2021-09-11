@@ -1,0 +1,175 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.ml-auto{
+    margin-left: auto;
+}
+
+.caps {
+    text-transform: uppercase;
+}
+
+.red {
+    color: #C74474;
+    font-weight: 300;
+}
+
+/* Navbar */
+.navbar {
+    padding: 2% 15%;
+}
+
+/* Home Landing */
+.banner {
+    background-color: black;
+    padding: 10% 12%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-text {
+    max-width: 800px;
+}
+
+.banner h1 {
+    font-size: 3.5em;
+    padding-bottom: 2rem;
+    font-weight: 600;
+}
+
+.banner h3 {
+    font-size: 2em;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 12%;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.project-img {
+    object-fit: cover;
+    height: 100%;
+}
+
+hr {
+    opacity: 80%;
+}
+
+/* Card styles */
+.card {
+    background-color: black !important;
+    margin: 30px 0 !important;
+    border: none;
+}
+
+.card-title {
+    font-size: 2em;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 3rem;
+}
+
+.card .description {
+    margin-bottom: 3rem;
+    font-weight: 300;
+}
+
+.card-btn {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.card-btn:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+/* About section */
+.about {
+    background-color: black;
+    padding: 5% 15%;
+    color: white;
+}
+
+#about-nav-btn {
+    cursor: pointer;
+}
+
+.about h1, .experience h1 {
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.about img {
+    width: 100%;
+    margin: auto;
+}
+
+.about p, .experience p {
+    font-weight: 200;
+}
+
+.experience {
+    padding: 5% 27%;
+}
+
+.experience .item {
+    margin: 80px 0;
+}
+
+.experience h3 {
+    font-weight: 600;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 2% 15%;
+    color: white;
+    align-items: center;
+}
+
+.fab {
+    margin: 10px;
+    color: black;
+    background-color: white;
+    border-radius: 100%;
+    padding: 8px;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
