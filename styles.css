@@ -24,6 +24,10 @@ p {
     line-height: 1.7;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Navbar */
 .navbar {
     padding: 2% 15%;
@@ -114,6 +118,7 @@ hr {
     margin-top: 20px;
     display: inline-block;
     margin-bottom: 15px;
+    transition: 0.25s ease;
 }
 
 .card-btn:hover {
