@@ -16,9 +16,20 @@ body {
     font-weight: 300;
 }
 
+p {
+    margin: 0;
+    font-weight: 200;
+}
+
 /* Navbar */
 .navbar {
     padding: 2% 15%;
+}
+
+.navbar-brand {
+    max-width: 100px;
+    white-space: normal;
+    line-height: 1.3;
 }
 
 /* Home Landing */
@@ -58,9 +69,11 @@ body {
 
 .projects h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     font-size: 3em;
     font-weight: 600;
+    max-width: 50%;
 }
 
 .project-img {
@@ -123,6 +136,14 @@ hr {
     cursor: pointer;
 }
 
+.about .fullsize-img {
+    display: block;
+}
+
+.about .responsive-img {
+    display: none;
+}
+
 .about h1, .experience h1 {
     margin-bottom: 3rem;
     font-weight: 600;
@@ -130,11 +151,10 @@ hr {
 
 .about img {
     width: 100%;
-    margin: auto;
 }
 
-.about p, .experience p {
-    font-weight: 200;
+.about-img {
+    margin: auto;
 }
 
 .experience {
@@ -172,4 +192,93 @@ footer {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+
+/************* RESPONSIVE LAYOUT *****************/
+
+/* Tablet */
+@media only screen and (max-width: 1000px) {
+    .projects h2 {
+        max-width: 90%;
+    }
+
+    .about .fullsize-img {
+        display: none;
+    }
+
+    .about .responsive-img {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .about .row {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .about h1 {
+        text-align: center;
+    }
+
+    .experience {
+        padding: 5% 12%;
+    }
+
+    .experience h3 {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Smaller tablet */
+@media only screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 3em;
+    }
+
+    .banner h3 {
+        font-size: 1.5em;
+    }
+
+    .projects h2 {
+        font-size: 2.5em;
+    }
+
+    .card.middle .row {
+        flex-direction: column-reverse;
+    }  
+
+    .experience {
+        text-align: center;
+    }
+    
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .banner {
+        padding: 15% 12%;
+    }
+    
+    .banner h1 {
+        font-size: 2.5em;
+    }
+
+    .banner h3 {
+        font-size: 1em;
+    }
+
+    .about {
+        padding: 15% 10%;
+    }
+
+    .projects {
+        padding: 4% 0;
+    }
+
+    .projects h2 {
+        font-size: 2em;
+    }
 }
